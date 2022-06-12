@@ -45,11 +45,9 @@ jobs:
         username: ${{ secrets.USER_NAME }}
         
         script: |
-          cat .ssh/authorized_keys
-          cd ..
-          ls
-          cd ~/eku/ui
-          ls
+          git pull origin main
+          npm run build
+          cp -a ~/eku/ui/dist/ui/. /var/www/html
           
         
     
