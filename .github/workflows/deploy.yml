@@ -45,7 +45,8 @@ jobs:
         username: ${{ secrets.USER_NAME }}
         
         script:
-          mkdir test
+          cd ~/eku
+          git pull origin main
           
         
     
