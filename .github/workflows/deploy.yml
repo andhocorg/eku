@@ -48,8 +48,8 @@ jobs:
           cd ~/eku
           git pull origin main
           cd ~/eku/ui
-          npm install
           npm run build
+          cp -a ~/eku/ui/dist/ui/. ~/var/www/html
           
         
     
