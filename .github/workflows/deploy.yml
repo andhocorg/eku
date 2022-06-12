@@ -47,6 +47,9 @@ jobs:
         script: |
           cd ~/eku
           git pull origin main
+          cd ~/eku/ui
+          npm install
+          npm run build
           
         
     
