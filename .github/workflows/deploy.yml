@@ -44,7 +44,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         username: ${{ secrets.USER_NAME }}
         
-        script:
+        script: |
           cd ~/eku
           git pull origin main
           
