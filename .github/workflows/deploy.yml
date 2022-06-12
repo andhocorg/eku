@@ -49,6 +49,8 @@ jobs:
           git pull origin main
           npm run build
           cp -a ~/eku/ui/dist/ui/. /var/www/html
+          cd ~/eku/api
+          pm2 restart index
           
         
     
