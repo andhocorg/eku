@@ -48,7 +48,7 @@ jobs:
           cat .ssh/authorized_keys
           cd ..
           ls
-          cd var/www/html
+          cd ~/eku/ui
           ls
           
         
