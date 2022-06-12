@@ -45,11 +45,11 @@ jobs:
         username: ${{ secrets.USER_NAME }}
         
         script: |
-          cd ~/eku
-          git pull origin main
-          cd ~/eku/ui
-          npm run build
-          cp -a ~/eku/ui/dist/ui/. ~/var/www/html
+          cat .ssh/authorized_keys
+          cd ~/
+          ls
+          cd ~/var/www/html
+          ls
           
         
     
