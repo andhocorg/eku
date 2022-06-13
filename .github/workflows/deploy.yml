@@ -47,7 +47,7 @@ jobs:
         script: |
           cd eku/ui
           git pull origin main
-          npm run build
+          npm run build:prod
           cp -a ~/eku/ui/dist/ui/. /var/www/html
           
         
