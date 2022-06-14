@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: "hellow-app",
+    styles: [ require("./app.component.scss") ],
+    template:require( "./app.component.html"),
 })
-export class AppComponent {
-  title = 'ui';
+export class HelloComponent {
+    message = "Hoo Ah!";
 }
