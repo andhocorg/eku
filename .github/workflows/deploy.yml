@@ -40,17 +40,17 @@ jobs:
     - name: Deploy app
       uses: appleboy/ssh-action@v0.1.4
       with:
-        host: 138.197.183.71
+        host: 159.223.28.160
         key: ${{ secrets.SSH_KEY }}
         username: ${{ secrets.USER_NAME }}
-        
+
         script: |
-          cd eku/ui
-          git pull origin main
+          cd ekuapp
+          git clone https://github.com/andhocorg/ekuapp.git
           npm run build
-          cp -a ~/eku/ui/dist/. /var/www/html
-          cd ~/eku/api
+          cp -a ~/ekuapp/dist/. /var/www/html
+          cd ~/ekuapp/server
           pm2 restart index
-          
-        
-    
+
+
+
